@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+    android:background="#6d4c41"
+    tools:context="com.udacity.gradle.builditbigger.MainActivityFragment">
+
+    <TextView
+        android:id="@+id/instructions_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="197dp"
+        android:text="@string/instructions" />
+
+    <!--<Button-->
+        <!--android:id="@+id/joke_button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/instructions_text_view"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:background="?attr/colorAccent"-->
+        <!--android:onClick="tellJoke"-->
+        <!--android:text="@string/button_text"-->
+    <!--tools:ignore="OnClick" />-->
+
+    <Button
+        android:id="@+id/joke_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="218dp"
+        android:onClick="tellJoke"
+        android:text="@string/button_text"
+        tools:ignore="OnClick"/>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity = "center"
+        android:visibility="gone">
+    </ProgressBar>
+
+</RelativeLayout>
+
