@@ -17,6 +17,7 @@ public class EndpointAsyncTaskTest {
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
+            assertNotNull(s);
             if (s !=null){
                 assertTrue(true);
             }
